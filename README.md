@@ -14,7 +14,7 @@ services:
         volumes:
             - ./data:/var/lib/postgresql
     backup:
-        build: .
+        image: reg2005/postgresql-backup
         depends_on:
             - postgres
         links:
